@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Покупка - Лот</title>
+</head>
+<style>
+    button {}
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <div style="margin-bottom: 30px;">
+            <button style="width: 260px; height: 45px; border: 2px solid #000;" type='button' data-toggle='modal' data-target='#lotModal3'>Встречное предложение</button>
+        </div>
+        <div style="margin-bottom: 30px;">
+            <button style="width: 260px; height: 45px; border: 2px solid #000;" type='button' data-toggle='modal' data-target='#lotModal4'>незавершённые сделки</button>
+        </div>
+    </div>
+
+    <div id='lotModal3' class='modal modal-lot fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class='modal__content'>
+                <div class="modal-lot__title">Встречное предложение</div>
+                <div class="modal-lot__subtitle">На заявку · #9876789</div>
+                <div class="lots__request-form">
+                    <fieldset class="order-group order-group--grey">
+                        <label>Обьем/ кг</label>
+                        <input type="text">
+                    </fieldset>
+                    <div class="lots__request-groups">
+                        <fieldset class="order-group order-group--grey">
+                            <label>Ваша цена /кг</label>
+                            <input type="text">
+                        </fieldset>
+                        <fieldset class="order-group order-group--grey">
+                            <label>Валюта</label>
+
+                            <select name="" class="select" style="display: none;">
+                                <option value="">RUB</option>
+                                <option value="">USD</option>
+                                <option value="">EUR</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="modal-lot__buttons">
+                        <button class="modal-lot__save btn btn-red">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='lotModal4' class='modal modal-not-finish fade' role='dialog'>
+        <div class='modal-dialog'>
+            <div class="modal-not-finish__content">
+                <div class="modal-not-finish__top">
+                    <div class="modal-not-finish__title">У вас есть незавершённые сделки</div>
+                    <button type='button' class='modal-not-finish__close' data-dismiss='modal'>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 7L7 25" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M25 25L7 7" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </div>
+
+                <div class="modal-not-finish__bottom">
+                    <div class="modal-not-finish__subtitle">Я покупаю 12-гидроксистеариновая кислота</div>
+                    <div class="modal-not-finish__info">
+                        <div class="modal-not-finish__badge">подтверждено</div>
+                        <div class="modal-not-finish__date">Лот · #9713874 · от 11 марта 2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.nice-select.min.js "></script>
+    <script src="js/swiper.js "></script>
+    <script src="js/jquery.maskedinput.min.js "></script>
+    <script src="js/index.js "></script>
+</body>
+
+</html>

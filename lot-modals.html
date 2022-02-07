@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Покупка - Лот</title>
+</head>
+<style>
+    button {}
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <div style="margin-bottom: 30px;">
+            <button style="width: 260px; height: 45px; border: 2px solid #000;" type='button' data-toggle='modal' data-target='#lotModal1'>Modal 1</button>
+        </div>
+        <div style="margin-bottom: 30px;">
+            <button style="width: 260px; height: 45px; border: 2px solid #000;" type='button' data-toggle='modal' data-target='#lotModal2'>Modal 2</button>
+        </div>
+    </div>
+
+    <div id='lotModal1' class='modal modal-lot fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class='modal__content'>
+                <div class="modal-lot__title">Изменить заявку #9876789</div>
+                <div class="modal-lot__subtitle">Предложение</div>
+                <div class="lots__request-form">
+                    <fieldset class="order-group order-group--grey">
+                        <label>Страна доставки</label>
+                        <select name="" class="select" style="display: none;">
+                            <option value="">Австрийская Республика</option>
+                            <option value="">Австрийская Республика 2</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="order-group order-group--grey">
+                        <label>Город доставки</label>
+                        <input type="text">
+                    </fieldset>
+                    <fieldset class="order-group order-group--grey">
+                        <label>Адрес доставки</label>
+                        <input type="text">
+                    </fieldset>
+                    <fieldset class="order-group order-group--grey">
+                        <label>Объём сделки</label>
+                        <input type="text">
+                    </fieldset>
+                    <div class="lots__request-groups">
+                        <fieldset class="order-group order-group--grey">
+                            <label>Ваша цена /кг</label>
+                            <input type="text">
+                        </fieldset>
+                        <fieldset class="order-group order-group--grey">
+                            <label>Валюта</label>
+
+                            <select name="" class="select" style="display: none;">
+                                <option value="">RUB</option>
+                                <option value="">USD</option>
+                                <option value="">EUR</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <fieldset class="order-group order-group--grey">
+                        <label>Срок доставки</label>
+                        <input type="date" data-placeholder="Срок доставки" required="" aria-required="true">
+                    </fieldset>
+                    <fieldset class="order-group order-group--grey">
+                        <label>Фасовка</label>
+                        <select name="" class="select" style="display: none;">
+                            <option value="">Пластиковая бочка - 150кг / 245.0 RUB</option>
+                            <option value="">Пластиковая бочка - 150кг / 245.0 RUB 2</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="order-group order-group--grey">
+                        <label>Дата истечения</label>
+                        <input type="date" data-placeholder="Дата истечения" required="" aria-required="true">
+                    </fieldset>
+                    <div class="modal-lot__buttons">
+                        <button class="modal-lot__save btn btn-red">Сохранить</button>
+                        <button class="modal-lot__delete btn btn-grey-outline">Удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='lotModal2' class='modal modal-lot fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class='modal__content'>
+                <div class="modal-lot__title">Изменить заявку #9876789</div>
+                <div class="lots__request-form">
+                    <div class="lots__request-group">
+                        <div class="lots__request-group-title lots__request-group-title--active">
+                            <span>Предложение</span>
+                        </div>
+                        <div class="lots__request-items">
+                            <fieldset class="order-group order-group--grey">
+                                <label>В наличии /кг</label>
+                                <input type="text">
+                            </fieldset>
+                            <div class="lots__request-groups">
+                                <fieldset class="order-group order-group--grey">
+                                    <label>Ваша цена /кг</label>
+                                    <input type="text">
+                                </fieldset>
+                                <fieldset class="order-group order-group--grey">
+                                    <label>Валюта</label>
+
+                                    <select name="" class="select" style="display: none;">
+                                        <option value="">RUB</option>
+                                        <option value="">USD</option>
+                                        <option value="">EUR</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="lots__request-groups">
+                                <fieldset class="order-group order-group--grey">
+                                    <label>Срок отгрузки</label>
+                                    <input type="text">
+                                </fieldset>
+                                <fieldset class="order-group order-group--grey">
+                                    <label style="width: 100%;">Суток после оплаты</label>
+                                </fieldset>
+                            </div>
+                            <fieldset class="order-group order-group--grey">
+                                <label>Отгрузка</label>
+                                <select name="" class="select" style="display: none;">
+                                    <option value="">Россия</option>
+                                    <option value="">Россия 2</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="order-group order-group--grey">
+                                <label>Город</label>
+                                <input type="text">
+                            </fieldset>
+                            <fieldset class="order-group order-group--grey">
+                                <label>Адрес склада</label>
+                                <input type="text">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="lots__request-group">
+                        <div class="lots__request-group-title">
+                            <span>Добавить возможные фасовки</span>
+                        </div>
+                        <div class="lots__request-items">
+                            <div class="lots__packing">
+                                <div class="lots__packing-wrap">
+                                    <fieldset class="order-group order-group--grey">
+                                        <label>Название</label>
+                                        <input type="text">
+                                    </fieldset>
+                                    <fieldset class="order-group order-group--grey">
+                                        <label>Масса нетто /кг</label>
+                                        <input type="number">
+                                    </fieldset>
+                                    <div class="lots__request-groups">
+                                        <fieldset class="order-group order-group--grey">
+                                            <label>Стоимость тары</label>
+                                            <input type="text">
+                                        </fieldset>
+                                        <fieldset class="order-group order-group--grey">
+                                            <label>Валюта</label>
+
+                                            <select name="" class="select" style="display: none;">
+                                                <option value="">RUB</option>
+                                                <option value="">USD</option>
+                                                <option value="">EUR</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <button class="lots__packing-delete">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.4995 3.5L2.49951 3.50001" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M6.5 6.5V10.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M9.5 6.5V10.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="lots__packing">
+                                <div class="lots__packing-wrap">
+                                    <fieldset class="order-group order-group--grey">
+                                        <label>Название</label>
+                                        <input type="text">
+                                    </fieldset>
+                                    <fieldset class="order-group order-group--grey">
+                                        <label>Масса нетто /кг</label>
+                                        <input type="number">
+                                    </fieldset>
+                                    <div class="lots__request-groups">
+                                        <fieldset class="order-group order-group--grey">
+                                            <label>Стоимость тары</label>
+                                            <input type="text">
+                                        </fieldset>
+                                        <fieldset class="order-group order-group--grey">
+                                            <label>Валюта</label>
+
+                                            <select name="" class="select" style="display: none;">
+                                                <option value="">RUB</option>
+                                                <option value="">USD</option>
+                                                <option value="">EUR</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <button class="lots__packing-delete">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.4995 3.5L2.49951 3.50001" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M6.5 6.5V10.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M9.5 6.5V10.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5" stroke="#C5C5C5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="lots__packing-new">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75Z" stroke="#E20024" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.1875 9H11.8125" stroke="#E20024" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M9 6.1875V11.8125" stroke="#E20024" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>Добавить вариант фасовки</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-lot__buttons">
+                        <button class="modal-lot__save btn btn-red">Сохранить</button>
+                        <button class="modal-lot__delete btn btn-grey-outline">Удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.nice-select.min.js "></script>
+    <script src="js/swiper.js "></script>
+    <script src="js/jquery.maskedinput.min.js "></script>
+    <script src="js/index.js "></script>
+</body>
+
+</html>

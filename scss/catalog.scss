@@ -135,7 +135,8 @@
     &__group {
         margin-right: 15px;
         flex-shrink: 1;
-        flex-grow: 1;
+        // flex-grow: 1;
+        width: 185px;
     }
     .select {
         height: 40px;
@@ -575,6 +576,9 @@
             width: unset;
             margin-bottom: 0;
             flex-shrink: unset;
+            input {
+                padding-right: 10px;
+            }
         }
         &__tab {
             &:not(:last-child) {
@@ -773,6 +777,10 @@
 
 @media screen and (max-width: 768px) {
     .catalog-card {
+        &__title {
+            white-space: unset;
+            overflow: unset;
+        }
         &__right {
             flex-wrap: wrap;
         }
@@ -795,6 +803,15 @@
             margin-right: 0;
         }
     }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            margin-bottom: 7px;
+        }
+        &__tab {
+            margin-bottom: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -807,16 +824,18 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     .catalog-filter {
         width: calc(100% - 15px);
         &__price {
             margin-right: 5px;
+            flex-grow: 1;
             label {
                 margin-right: 3px;
             }
             input {
                 width: 45px;
+                flex-grow: 1;
                 padding: 0 5px;
             }
         }

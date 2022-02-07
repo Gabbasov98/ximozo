@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Заказать звонок</title>
+</head>
+<style>
+    button {}
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <div style="margin-bottom: 30px;">
+            <button style="width: 260px; height: 45px; border: 2px solid #000;" type='button' data-toggle='modal' data-target='#callModal1'>Modal 1</button>
+        </div>
+        <div style="margin-bottom: 30px;">
+            <button style="width: 260px; height: 45px; border: 2px solid #000;" type='button' data-toggle='modal' data-target='#callModal2'>Modal 2</button>
+        </div>
+    </div>
+
+    <div id='callModal1' class='modal modal-call fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class='modal__content'>
+                <div class="modal__title">Заказать звонок</div>
+                <div class="modal-call__desc">Просто оставьте ваши контакты и мы вам перезвоним в ближайшее время</div>
+                <form class="modal-call__form">
+                    <fieldset class='modal-call__form-group form-group'>
+                        <label>Ваше имя</label>
+                        <input type='text' />
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 16.25C16.5899 16.25 19.5 13.3399 19.5 9.75C19.5 6.16015 16.5899 3.25 13 3.25C9.41015 3.25 6.5 6.16015 6.5 9.75C6.5 13.3399 9.41015 16.25 13 16.25Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.14746 21.9365C4.14639 20.2075 5.58274 18.7718 7.31222 17.7736C9.0417 16.7754 11.0034 16.25 13.0003 16.25C14.9971 16.25 16.9588 16.7755 18.6883 17.7737C20.4177 18.7719 21.854 20.2077 22.8529 21.9368" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </fieldset>
+                    <fieldset class='modal-call__form-group form-group'>
+                        <label>Номер телефона</label>
+                        <input type='tel' placeholder="+7" />
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.39212 12.6764C10.2349 14.3995 11.6316 15.7898 13.3585 16.6248C13.4848 16.6846 13.6246 16.7106 13.764 16.7C13.9034 16.6895 14.0377 16.6428 14.1536 16.5646L16.6963 14.8691C16.8087 14.7941 16.9381 14.7484 17.0727 14.736C17.2073 14.7236 17.3429 14.745 17.4671 14.7983L22.224 16.8369C22.3856 16.9056 22.5205 17.0249 22.6084 17.1769C22.6963 17.3289 22.7324 17.5053 22.7113 17.6796C22.561 18.8561 21.9869 19.9374 21.0967 20.7212C20.2065 21.5049 19.0611 21.9373 17.875 21.9374C14.2117 21.9374 10.6984 20.4821 8.10809 17.8918C5.51774 15.3015 4.0625 11.7882 4.0625 8.12489C4.06256 6.93881 4.49495 5.79343 5.27869 4.9032C6.06244 4.01297 7.1438 3.43893 8.3203 3.28858C8.4946 3.26749 8.67103 3.30361 8.82301 3.39151C8.97499 3.4794 9.09429 3.61431 9.16294 3.7759L11.2034 8.53694C11.2562 8.66008 11.2777 8.79437 11.266 8.92784C11.2543 9.06131 11.2098 9.18982 11.1364 9.30193L9.44678 11.8836C9.36988 11.9998 9.32442 12.1339 9.31484 12.2728C9.30526 12.4118 9.33189 12.5508 9.39212 12.6764V12.6764Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </fieldset>
+                    <div class="modal-call__check confirm-check">
+                        <input type='checkbox' class='checkbox' id='c' />
+                        <label for='c'>Я соглашаюсь с условиями <a href="">Пользовательского соглашения</a></label>
+                    </div>
+                    <button class="modal-call__btn btn btn-red">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id='callModal2' class='modal modal-call fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class='modal__content'>
+                <div class="modal__title">
+                    Отлично! <br> Ваша заявка <br> принята
+                </div>
+                <div class="modal-call__hint">
+                    <div class="modal-call__hint-img">
+                        <img src="img/UserCircleGear.svg" alt="">
+                    </div>
+                    <div class="modal-call__hint-text">В течении 15 минут наш менеджер свяжется с вами по телефону. Оставайтесь на связи.</div>
+                </div>
+                <button class="modal-call__btn modal-call__btn2 btn btn-red">Прекрасно</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.nice-select.min.js "></script>
+    <script src="js/swiper.js "></script>
+    <script src="js/jquery.maskedinput.min.js "></script>
+    <script src="js/index.js "></script>
+</body>
+
+</html>

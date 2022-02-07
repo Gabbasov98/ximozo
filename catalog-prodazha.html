@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог продажа</title>
 </head>
@@ -149,13 +150,37 @@
                                 <a href="" class="header-bottom__link">Продать</a>
                                 <a href="" class="header-bottom__link">Справочник</a>
                             </nav>
-                            <a href="" class="header__search">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.15618 14.0625C11.4181 14.0625 14.0624 11.4182 14.0624 8.15625C14.0624 4.89432 11.4181 2.25 8.15618 2.25C4.89425 2.25 2.24993 4.89432 2.24993 8.15625C2.24993 11.4182 4.89425 14.0625 8.15618 14.0625Z" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12.3323 12.333L15.7495 15.7502" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Название или CAS</span>
-                            </a>
+                            <div class="header__search">
+                                <button class="header__search-btn">
+                                    <svg class="header__search-btn-open" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.15618 14.0625C11.4181 14.0625 14.0624 11.4182 14.0624 8.15625C14.0624 4.89432 11.4181 2.25 8.15618 2.25C4.89425 2.25 2.24993 4.89432 2.24993 8.15625C2.24993 11.4182 4.89425 14.0625 8.15618 14.0625Z" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.3323 12.333L15.7495 15.7502" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg class="header__search-btn-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.75 5.25L5.25 18.75" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.75 18.75L5.25 5.25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <input type="text" placeholder="Название или CAS">
+                                <div class="header__search-result">
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">12-гидроксистеариновая кислота</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">Abs-пластик hi 121 9001</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">AQUPEC SW-705E</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">Arlamol hd-lq-(rb)</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                </div>
+                            </div>
                             <div class="header__buttons">
                                 <button class="header__btn btn header__btn-cabinet btn-grey-outline">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,8 +206,26 @@
                         <div class="catalog__tab" data-tab-path="3">Все</div>
                     </div>
                     <div class="catalog__nav">
-                        <div class="catalog__search catalog__search--sell">
+                        <div class="catalog__search catalog__search--sell search-field">
                             <input type="text" placeholder="Название продукта или CAS">
+                            <div class="search-field__result">
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">12-гидроксистеариновая кислота</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">Abs-пластик hi 121 9001</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">AQUPEC SW-705E</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">Arlamol hd-lq-(rb)</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                            </div>
                         </div>
                         <div class="catalog-filter">
                             <div class="catalog-filter__nav">
@@ -686,8 +729,26 @@
                         <a href="" class="footer__logo">
                             <img src="img/logo.svg" alt="">
                         </a>
-                        <div class="footer__search">
+                        <div class="footer__search search-field">
                             <input type="text" placeholder="Введите название продукта или CAS">
+                            <div class="search-field__result">
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">12-гидроксистеариновая кислота</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">Abs-пластик hi 121 9001</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">AQUPEC SW-705E</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">Arlamol hd-lq-(rb)</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="footer-top__bottom">
@@ -843,10 +904,13 @@
         </div>
     </div>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.nice-select.min.js "></script>
+    <script src="js/swiper.js "></script>
+    <script src="js/jquery.maskedinput.min.js "></script>
+    <script src="js/index.js "></script>
 </body>
 
 </html>

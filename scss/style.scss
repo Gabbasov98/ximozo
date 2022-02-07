@@ -7,12 +7,33 @@
 @import 'popups';
 @import 'catalog';
 @import 'lots';
+@import 'about';
+@import 'news';
+@import 'pages';
+@import 'contacts';
+@import 'lk';
+@import 'deals';
 .wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
     width: 100%;
+    position: relative;
+    &.body-before {
+        overflow-y: hidden;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            background: rgba(#000, 0.5);
+            left: 0;
+            top: 0;
+        }
+    }
 }
 
 .content {
@@ -22,11 +43,23 @@
 }
 
 .mt-0 {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 @media screen and (min-width: 1300px) {
     .container {
         width: 1270px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        padding: 0 15px;
     }
 }

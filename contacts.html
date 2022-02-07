@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Наши контакты</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class='header'>
+                <section class='header-top'>
+                    <div class='container'>
+                        <div class='header-top__inner'>
+                            <button class="header__city btn" data-toggle='modal' data-target='#cityModal'>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.33683 2.97264L5.99965 13.5541C6.03414 13.6537 6.09925 13.7399 6.18567 13.8003C6.27209 13.8608 6.3754 13.8923 6.48082 13.8905C6.58625 13.8886 6.6884 13.8535 6.77267 13.7901C6.85694 13.7268 6.91902 13.6384 6.95003 13.5376L8.42225 8.75286C8.44624 8.67491 8.48892 8.60402 8.54659 8.54635C8.60426 8.48868 8.67515 8.446 8.7531 8.42201L13.5378 6.94979C13.6386 6.91878 13.727 6.8567 13.7904 6.77243C13.8538 6.68816 13.8889 6.58601 13.8907 6.48058C13.8925 6.37516 13.861 6.27185 13.8006 6.18543C13.7402 6.09901 13.654 6.0339 13.5543 5.9994L2.97288 2.33659C2.88421 2.3059 2.78869 2.30077 2.69725 2.32181C2.6058 2.34284 2.52212 2.38918 2.45577 2.45553C2.38942 2.52188 2.34308 2.60556 2.32205 2.697C2.30102 2.78845 2.30614 2.88397 2.33683 2.97264V2.97264Z" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Город Казань</span>
+                            </button>
+                            <div class="header-top__right">
+                                <div class="header-lk">
+                                    <div class="header-lk__title">ООО «ЕвроХим»</div>
+                                    <div class="header-lk__city">Россия, Москва</div>
+                                    <div class="header-lk__items">
+                                        <a href="" class="header-lk__item">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6.875 10H13.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 6.875V13.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Мои лоты и заявки</span>
+                                        </a>
+                                        <a href="" class="header-lk__item">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2.5 10L10 14.375L17.5 10" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Мои сделки</span>
+                                        </a>
+                                        <a href="" class="header-lk__item">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0001 17.5C14.1422 17.5 17.5001 14.1421 17.5001 10C17.5001 5.85786 14.1422 2.5 10.0001 2.5C5.85793 2.5 2.50006 5.85786 2.50006 10C2.50006 14.1421 5.85793 17.5 10.0001 17.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 14.6875C10.3452 14.6875 10.625 14.4077 10.625 14.0625C10.625 13.7173 10.3452 13.4375 10 13.4375C9.65482 13.4375 9.375 13.7173 9.375 14.0625C9.375 14.4077 9.65482 14.6875 10 14.6875Z" fill="black"/>
+                                                <path d="M10 11.2504V10.6254C10.4326 10.6254 10.8556 10.4971 11.2153 10.2567C11.575 10.0163 11.8554 9.6747 12.021 9.27499C12.1866 8.87527 12.2299 8.43544 12.1455 8.01111C12.0611 7.58677 11.8527 7.197 11.5468 6.89107C11.2409 6.58514 10.8511 6.3768 10.4268 6.2924C10.0024 6.20799 9.56259 6.25131 9.16288 6.41688C8.76317 6.58245 8.42153 6.86282 8.18116 7.22256C7.94079 7.58229 7.8125 8.00522 7.8125 8.43787" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Техподдержка</span>
+                                        </a>
+                                        <a href="" class="header-lk__item">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.9997 17.5L9.99912 14.375L4.99969 17.5V3.75C4.99969 3.58424 5.06554 3.42527 5.18275 3.30806C5.29996 3.19085 5.45893 3.125 5.62469 3.125H14.3747C14.5405 3.125 14.6994 3.19085 14.8166 3.30806C14.9338 3.42527 14.9997 3.58424 14.9997 3.75V17.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Избранное</span>
+                                        </a>
+                                        <a href="" class="header-lk__item">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.75 10.875L17.5 7.125L13.75 3.375" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15 15.875H3.125C2.95924 15.875 2.80027 15.8092 2.68306 15.6919C2.56585 15.5747 2.5 15.4158 2.5 15.25V5.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.86133 12.75C6.27758 11.14 7.21687 9.71395 8.53164 8.69581C9.8464 7.67766 11.4621 7.12513 13.125 7.125H17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Поделиться</span>
+                                        </a>
+                                        <a href="" class="header-lk__item">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.1873 13.6978V6.30213C17.1873 6.19145 17.1579 6.08276 17.1021 5.98716C17.0464 5.89156 16.9662 5.81249 16.8699 5.75803L10.3074 2.04879C10.2135 1.99576 10.1076 1.9679 9.99982 1.9679C9.89205 1.9679 9.7861 1.99576 9.69228 2.04879L3.12978 5.75803C3.03343 5.81249 2.95326 5.89156 2.89749 5.98716C2.84171 6.08276 2.81232 6.19145 2.81232 6.30213V13.6978C2.81232 13.8085 2.84171 13.9172 2.89749 14.0128C2.95326 14.1084 3.03343 14.1874 3.12978 14.2419L9.69228 17.9511C9.7861 18.0042 9.89205 18.032 9.99982 18.032C10.1076 18.032 10.2135 18.0042 10.3074 17.9511L16.8699 14.2419C16.9662 14.1874 17.0464 14.1084 17.1021 14.0128C17.1579 13.9172 17.1873 13.8085 17.1873 13.6978V13.6978Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M9.99988 12.8125C11.5532 12.8125 12.8124 11.5533 12.8124 10C12.8124 8.4467 11.5532 7.1875 9.99988 7.1875C8.44658 7.1875 7.18738 8.4467 7.18738 10C7.18738 11.5533 8.44658 12.8125 9.99988 12.8125Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Настройки</span>
+                                        </a>
+                                        <a href="" class="header-lk__item header-lk__item--logout">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5948 6.71875L16.8752 10L13.5948 13.2812" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.125 10H16.8727" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8.125 16.875H3.75C3.58424 16.875 3.42527 16.8092 3.30806 16.6919C3.19085 16.5747 3.125 16.4158 3.125 16.25V3.75C3.125 3.58424 3.19085 3.42527 3.30806 3.30806C3.42527 3.19085 3.58424 3.125 3.75 3.125H8.125" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Выйти</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-verification">
+                                    <svg class="header-verification-bg" width="134" height="240" viewBox="0 0 134 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M134 15C134 6.71573 127.284 0 119 0H116L0 240H119C127.284 240 134 233.284 134 225V15Z" fill="#1E1E1E"/>
+                                    </svg>
+                                    <div class="header-verification__top">
+                                        <div class="header-verification__title">Пройдите верификацию вашего профиля</div>
+                                        <img src="img/LockOpen.svg" alt="">
+                                    </div>
+                                    <a href="" class="header-verification__btn btn btn-red">Пройти верификацию</a>
+                                </div>
+                                <nav class="nav">
+                                    <a href="" class="nav__item">О проекте</a>
+                                    <a href="" class="nav__item">Новости</a>
+                                    <a href="" class="nav__item">Частые вопросы</a>
+                                    <a href="" class="nav__item">Покупателю</a>
+                                    <a href="" class="nav__item">Поставщику</a>
+                                    <a href="" class="nav__item">Контакты</a>
+                                </nav>
+                                <a href="tel:8 800 2700 700" class="header__phone btn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.77977 7.80077C6.29842 8.86111 7.15792 9.7167 8.2206 10.2305C8.29835 10.2674 8.38436 10.2833 8.47015 10.2768C8.55595 10.2703 8.63857 10.2416 8.7099 10.1935L10.2746 9.1501C10.3438 9.10395 10.4234 9.0758 10.5063 9.06819C10.5891 9.06058 10.6725 9.07376 10.749 9.10652L13.6763 10.3611C13.7757 10.4033 13.8588 10.4767 13.9128 10.5703C13.9669 10.6638 13.9892 10.7724 13.9762 10.8796C13.8837 11.6036 13.5304 12.2691 12.9826 12.7514C12.4347 13.2337 11.7299 13.4998 11 13.4998C8.74566 13.4998 6.58365 12.6043 4.98959 11.0102C3.39553 9.41617 2.5 7.25416 2.5 4.99982C2.50004 4.26993 2.76612 3.56507 3.24843 3.01724C3.73073 2.46941 4.39618 2.11615 5.12019 2.02363C5.22745 2.01065 5.33602 2.03288 5.42955 2.08697C5.52307 2.14106 5.59649 2.22408 5.63873 2.32352L6.89439 5.25339C6.92687 5.32917 6.9401 5.41181 6.93291 5.49394C6.92572 5.57608 6.89833 5.65516 6.85318 5.72415L5.81341 7.31289C5.76608 7.38435 5.73811 7.46688 5.73221 7.55239C5.72631 7.6379 5.7427 7.72348 5.77977 7.80077Z" fill="black"/>
+                                    </svg>
+                                    <span>8 800 2700 700</span>
+                                </a>
+                                <div class="header__socials">
+                                    <a href="" class="header__social btn">
+                                        <span>Telegram</span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.50004 8.4294L11.1199 13.3749C11.1849 13.4321 11.2637 13.4714 11.3485 13.489C11.4333 13.5067 11.5212 13.5019 11.6036 13.4754C11.6861 13.4488 11.7602 13.4012 11.8187 13.3374C11.8773 13.2736 11.9182 13.1956 11.9375 13.1112L14.2884 2.8529C14.3087 2.7642 14.3045 2.67165 14.2761 2.5852C14.2477 2.49875 14.1962 2.42169 14.1273 2.36231C14.0583 2.30294 13.9745 2.26351 13.8848 2.24827C13.7951 2.23303 13.7029 2.24256 13.6182 2.27584L2.08341 6.80736C1.98288 6.84686 1.89784 6.91784 1.84102 7.0097C1.7842 7.10155 1.75865 7.20933 1.76819 7.31692C1.77773 7.4245 1.82186 7.52611 1.89396 7.60652C1.96606 7.68694 2.06227 7.74185 2.16818 7.76303L5.50004 8.4294Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 8.4296L14.007 2.28564" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.30669 10.8996L6.35355 12.8527C6.28363 12.9226 6.19454 12.9703 6.09755 12.9896C6.00056 13.0088 5.90002 12.9989 5.80866 12.9611C5.7173 12.9233 5.63921 12.8592 5.58427 12.7769C5.52933 12.6947 5.5 12.5981 5.5 12.4992V8.42969" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="header__social btn">
+                                        <span>WhatsApp</span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.8393 11.0622C2.09384 9.80558 1.83277 8.32 2.10512 6.88447C2.37747 5.44894 3.1645 4.16221 4.31843 3.2659C5.47235 2.36958 6.91379 1.92534 8.37207 2.0166C9.83036 2.10785 11.2052 2.72832 12.2384 3.7615C13.2715 4.79468 13.892 6.16949 13.9833 7.62777C14.0745 9.08606 13.6303 10.5275 12.734 11.6814C11.8377 12.8354 10.551 13.6224 9.11544 13.8947C7.67991 14.1671 6.19433 13.906 4.93766 13.1606L4.93767 13.1605L2.86539 13.7526C2.77965 13.7771 2.68892 13.7782 2.60261 13.7559C2.51629 13.7335 2.43752 13.6885 2.37447 13.6254C2.31142 13.5624 2.26638 13.4836 2.24401 13.3973C2.22164 13.311 2.22277 13.2202 2.24726 13.1345L2.83935 11.0622L2.8393 11.0622Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.50711 11.5C8.8493 11.5009 8.19778 11.3721 7.58987 11.1208C6.98195 10.8695 6.42961 10.5007 5.96447 10.0355C5.49933 9.5704 5.13054 9.01805 4.87924 8.41014C4.62794 7.80222 4.49907 7.1507 4.50001 6.49289C4.50149 6.02988 4.68657 5.58635 5.01464 5.25962C5.34271 4.93288 5.78698 4.74961 6.25 4.75V4.75C6.32595 4.75 6.40054 4.77008 6.46623 4.8082C6.53191 4.84632 6.58635 4.90112 6.62403 4.96706L7.35472 6.24577C7.39879 6.32288 7.42152 6.41034 7.42057 6.49915C7.41963 6.58797 7.39504 6.67492 7.34935 6.75108L6.76253 7.72911C7.06444 8.3991 7.6009 8.93557 8.27089 9.23747V9.23747L9.24892 8.65066C9.32508 8.60496 9.41203 8.58038 9.50085 8.57943C9.58966 8.57849 9.67712 8.60122 9.75423 8.64528L11.0329 9.37597C11.0989 9.41365 11.1537 9.46809 11.1918 9.53377C11.2299 9.59946 11.25 9.67406 11.25 9.75V9.75C11.2487 10.2125 11.0649 10.6558 10.7385 10.9835C10.4121 11.3112 9.96959 11.4968 9.50711 11.5V11.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='header-bottom'>
+                    <div class='container'>
+                        <div class='header-bottom__inner'>
+                            <button class="header__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <a href="" class="header__logo">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <nav class="header-bottom__nav">
+                                <a href="" class="header-bottom__link">Купить</a>
+                                <a href="" class="header-bottom__link">Продать</a>
+                                <a href="" class="header-bottom__link">Справочник</a>
+                            </nav>
+                            <div class="header__search">
+                                <button class="header__search-btn">
+                                    <svg class="header__search-btn-open" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.15618 14.0625C11.4181 14.0625 14.0624 11.4182 14.0624 8.15625C14.0624 4.89432 11.4181 2.25 8.15618 2.25C4.89425 2.25 2.24993 4.89432 2.24993 8.15625C2.24993 11.4182 4.89425 14.0625 8.15618 14.0625Z" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.3323 12.333L15.7495 15.7502" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg class="header__search-btn-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.75 5.25L5.25 18.75" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.75 18.75L5.25 5.25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <input type="text" placeholder="Название или CAS">
+                                <div class="header__search-result">
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">12-гидроксистеариновая кислота</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">Abs-пластик hi 121 9001</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">AQUPEC SW-705E</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                    <a href="" class="header__search-item">
+                                        <div class="header__search-item-title">Arlamol hd-lq-(rb)</div>
+                                        <div class="header__search-item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__buttons">
+                                <button class="header__btn btn header__btn-cabinet btn-grey-outline">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 11.25C11.4853 11.25 13.5 9.23528 13.5 6.75C13.5 4.26472 11.4853 2.25 9 2.25C6.51472 2.25 4.5 4.26472 4.5 6.75C4.5 9.23528 6.51472 11.25 9 11.25Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.17896 15.1868C2.87052 13.9898 3.86492 12.9959 5.06225 12.3048C6.25958 11.6138 7.61768 11.25 9.00012 11.25C10.3826 11.25 11.7407 11.6138 12.938 12.3049C14.1353 12.996 15.1297 13.9899 15.8212 15.187" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Личный Кабинет</span>
+                                </button>
+                                <button class="header__btn header__btn-publish btn btn-red">Разместить <span>&nbsp;объявление</span></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <section class='contacts'>
+                <div class='container'>
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__wrap">
+                            <a href="" class="breadcrumbs__item">главная</a>
+                            <span class="breadcrumbs__item">контакты</span>
+                        </div>
+                    </div>
+                    <h1 class="contacts__title display2">Наши контакты</h1>
+                    <div class="contacts__inner">
+                        <div class="contacts__left">
+                            <div class="contacts__left-inner">
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <i class="contacts__item-icon">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 23L4 25V7L12 5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M20 27L12 23V5L20 9V27Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M20 9L28 7V25L20 27" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </i>
+                                        <div class="contacts__item-content">
+                                            <div class="contacts__item-bold">Казань, пр-т Сююмбике, дом 24/01</div>
+                                            <div class="contacts__item-grey">ост. Домостроителей - 2 этаж</div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <i class="contacts__item-icon">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.9268 5C21.622 5.45592 23.1677 6.34928 24.409 7.59059C25.6503 8.8319 26.5437 10.3776 26.9996 12.0728" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18.8916 8.86475C19.9087 9.1383 20.8362 9.67431 21.5809 10.4191C22.3257 11.1639 22.8617 12.0913 23.1353 13.1084" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11.5595 15.602C12.5968 17.7227 14.3158 19.4339 16.4412 20.4615C16.5967 20.5352 16.7687 20.5671 16.9403 20.5541C17.1119 20.5412 17.2771 20.4837 17.4198 20.3875L20.5492 18.3007C20.6877 18.2084 20.8469 18.1521 21.0126 18.1369C21.1782 18.1217 21.3451 18.148 21.498 18.2135L27.3526 20.7227C27.5515 20.8071 27.7175 20.954 27.8257 21.141C27.9339 21.3281 27.9783 21.5452 27.9524 21.7597C27.7673 23.2078 27.0608 24.5387 25.9652 25.5033C24.8695 26.4679 23.4598 27 22 27.0001C17.4913 27.0001 13.1673 25.2091 9.97919 22.0209C6.79107 18.8328 5 14.5088 5 10.0001C5.00008 8.54034 5.53224 7.13064 6.49685 6.03497C7.46146 4.9393 8.79237 4.2328 10.2404 4.04775C10.4549 4.02179 10.672 4.06625 10.8591 4.17443C11.0461 4.2826 11.193 4.44864 11.2775 4.64753L13.7888 10.5073C13.8537 10.6588 13.8802 10.8241 13.8658 10.9884C13.8514 11.1526 13.7967 11.3108 13.7064 11.4488L11.6268 14.6263C11.5322 14.7692 11.4762 14.9342 11.4644 15.1053C11.4526 15.2763 11.4854 15.4475 11.5595 15.602V15.602Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </i>
+                                        <div class="contacts__item-content">
+                                            <div class="contacts__item-bold">8 800 2700 700</div>
+                                            <div class="contacts__item-grey">ПН - СБ - 8:00 - 19:00 ВС - 8:00 - 18:00 Без обеда и выходных</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__map">
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfb3cfb22cac07c91e941671b09e182fa11e045b14598d01830f92df88985f45&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__cards">
+                            <div class="contacts__card">
+                                <div class="contacts__card-department">Отдел поставок</div>
+                                <div class="contacts__card-user">
+                                    <a href="" class="contacts__card-img">
+                                        <img src="img/avatar.jpg" alt="">
+                                    </a>
+                                    <div class="contacts__card-info">
+                                        <div class="contacts__card-prof">Менеджер</div>
+                                        <div class="contacts__card-name">Виктор Кузьмин</div>
+                                    </div>
+                                </div>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.50224 8.7763C7.08572 9.96917 8.05266 10.9317 9.24818 11.5098C9.33565 11.5512 9.4324 11.5692 9.52892 11.5619C9.62544 11.5546 9.71839 11.5222 9.79863 11.4681L11.559 10.2943C11.6368 10.2424 11.7264 10.2107 11.8196 10.2021C11.9127 10.1936 12.0066 10.2084 12.0926 10.2453L15.3858 11.6566C15.4977 11.7042 15.5911 11.7868 15.652 11.892C15.7128 11.9972 15.7378 12.1193 15.7232 12.24C15.6191 13.0545 15.2217 13.8031 14.6054 14.3457C13.9891 14.8883 13.1961 15.1877 12.375 15.1877C9.83887 15.1877 7.40661 14.1802 5.61329 12.3869C3.81997 10.5936 2.8125 8.16135 2.8125 5.62522C2.81254 4.80409 3.11189 4.01114 3.65448 3.39482C4.19707 2.77851 4.94571 2.3811 5.76021 2.27701C5.88088 2.26241 6.00302 2.28742 6.10824 2.34827C6.21346 2.40912 6.29605 2.50251 6.34357 2.61439L7.75619 5.91049C7.79272 5.99574 7.80761 6.08871 7.79952 6.18111C7.79144 6.27352 7.76062 6.36249 7.70983 6.4401L6.54008 8.22742C6.48684 8.30783 6.45537 8.40066 6.44874 8.49687C6.4421 8.59307 6.46054 8.68935 6.50224 8.7763V8.7763Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>+7 999 156 1992</span>
+                                </a>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 3.9375H15.75V13.5C15.75 13.6492 15.6907 13.7923 15.5852 13.8977C15.4798 14.0032 15.3367 14.0625 15.1875 14.0625H2.8125C2.66332 14.0625 2.52024 14.0032 2.41475 13.8977C2.30926 13.7923 2.25 13.6492 2.25 13.5V3.9375Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.75 3.9375L9 10.125L2.25 3.9375" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>viktor@ximozo.ru</span>
+                                </a>
+                            </div>
+                            <div class="contacts__card">
+                                <div class="contacts__card-department">Сотрудничество</div>
+                                <div class="contacts__card-user">
+                                    <a href="" class="contacts__card-img">
+                                        <img src="img/avatar2.jpg" alt="">
+                                    </a>
+                                    <div class="contacts__card-info">
+                                        <div class="contacts__card-prof">Менеджер</div>
+                                        <div class="contacts__card-name">Ольга Волкова</div>
+                                    </div>
+                                </div>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.50224 8.7763C7.08572 9.96917 8.05266 10.9317 9.24818 11.5098C9.33565 11.5512 9.4324 11.5692 9.52892 11.5619C9.62544 11.5546 9.71839 11.5222 9.79863 11.4681L11.559 10.2943C11.6368 10.2424 11.7264 10.2107 11.8196 10.2021C11.9127 10.1936 12.0066 10.2084 12.0926 10.2453L15.3858 11.6566C15.4977 11.7042 15.5911 11.7868 15.652 11.892C15.7128 11.9972 15.7378 12.1193 15.7232 12.24C15.6191 13.0545 15.2217 13.8031 14.6054 14.3457C13.9891 14.8883 13.1961 15.1877 12.375 15.1877C9.83887 15.1877 7.40661 14.1802 5.61329 12.3869C3.81997 10.5936 2.8125 8.16135 2.8125 5.62522C2.81254 4.80409 3.11189 4.01114 3.65448 3.39482C4.19707 2.77851 4.94571 2.3811 5.76021 2.27701C5.88088 2.26241 6.00302 2.28742 6.10824 2.34827C6.21346 2.40912 6.29605 2.50251 6.34357 2.61439L7.75619 5.91049C7.79272 5.99574 7.80761 6.08871 7.79952 6.18111C7.79144 6.27352 7.76062 6.36249 7.70983 6.4401L6.54008 8.22742C6.48684 8.30783 6.45537 8.40066 6.44874 8.49687C6.4421 8.59307 6.46054 8.68935 6.50224 8.7763V8.7763Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    <span>+7 999 156 1992</span>
+                                </a>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 3.9375H15.75V13.5C15.75 13.6492 15.6907 13.7923 15.5852 13.8977C15.4798 14.0032 15.3367 14.0625 15.1875 14.0625H2.8125C2.66332 14.0625 2.52024 14.0032 2.41475 13.8977C2.30926 13.7923 2.25 13.6492 2.25 13.5V3.9375Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.75 3.9375L9 10.125L2.25 3.9375" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    <span>viktor@ximozo.ru</span>
+                                </a>
+                            </div>
+                            <div class="contacts__card">
+                                <div class="contacts__card-department">Отдел качества</div>
+                                <div class="contacts__card-user">
+                                    <a href="" class="contacts__card-img">
+                                        <img src="img/avatar3.jpg" alt="">
+                                    </a>
+                                    <div class="contacts__card-info">
+                                        <div class="contacts__card-prof">Менеджер</div>
+                                        <div class="contacts__card-name">Марина Щеглова</div>
+                                    </div>
+                                </div>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.50224 8.7763C7.08572 9.96917 8.05266 10.9317 9.24818 11.5098C9.33565 11.5512 9.4324 11.5692 9.52892 11.5619C9.62544 11.5546 9.71839 11.5222 9.79863 11.4681L11.559 10.2943C11.6368 10.2424 11.7264 10.2107 11.8196 10.2021C11.9127 10.1936 12.0066 10.2084 12.0926 10.2453L15.3858 11.6566C15.4977 11.7042 15.5911 11.7868 15.652 11.892C15.7128 11.9972 15.7378 12.1193 15.7232 12.24C15.6191 13.0545 15.2217 13.8031 14.6054 14.3457C13.9891 14.8883 13.1961 15.1877 12.375 15.1877C9.83887 15.1877 7.40661 14.1802 5.61329 12.3869C3.81997 10.5936 2.8125 8.16135 2.8125 5.62522C2.81254 4.80409 3.11189 4.01114 3.65448 3.39482C4.19707 2.77851 4.94571 2.3811 5.76021 2.27701C5.88088 2.26241 6.00302 2.28742 6.10824 2.34827C6.21346 2.40912 6.29605 2.50251 6.34357 2.61439L7.75619 5.91049C7.79272 5.99574 7.80761 6.08871 7.79952 6.18111C7.79144 6.27352 7.76062 6.36249 7.70983 6.4401L6.54008 8.22742C6.48684 8.30783 6.45537 8.40066 6.44874 8.49687C6.4421 8.59307 6.46054 8.68935 6.50224 8.7763V8.7763Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>+7 999 156 1992</span>
+                                </a>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 3.9375H15.75V13.5C15.75 13.6492 15.6907 13.7923 15.5852 13.8977C15.4798 14.0032 15.3367 14.0625 15.1875 14.0625H2.8125C2.66332 14.0625 2.52024 14.0032 2.41475 13.8977C2.30926 13.7923 2.25 13.6492 2.25 13.5V3.9375Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.75 3.9375L9 10.125L2.25 3.9375" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>viktor@ximozo.ru</span>
+                                </a>
+                            </div>
+                            <div class="contacts__card">
+                                <div class="contacts__card-department">Отдел доставки</div>
+                                <div class="contacts__card-user">
+                                    <a href="" class="contacts__card-img">
+                                        <img src="img/avatar4.jpg" alt="">
+                                    </a>
+                                    <div class="contacts__card-info">
+                                        <div class="contacts__card-prof">Менеджер</div>
+                                        <div class="contacts__card-name">Алексей Дементьев</div>
+                                    </div>
+                                </div>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.50224 8.7763C7.08572 9.96917 8.05266 10.9317 9.24818 11.5098C9.33565 11.5512 9.4324 11.5692 9.52892 11.5619C9.62544 11.5546 9.71839 11.5222 9.79863 11.4681L11.559 10.2943C11.6368 10.2424 11.7264 10.2107 11.8196 10.2021C11.9127 10.1936 12.0066 10.2084 12.0926 10.2453L15.3858 11.6566C15.4977 11.7042 15.5911 11.7868 15.652 11.892C15.7128 11.9972 15.7378 12.1193 15.7232 12.24C15.6191 13.0545 15.2217 13.8031 14.6054 14.3457C13.9891 14.8883 13.1961 15.1877 12.375 15.1877C9.83887 15.1877 7.40661 14.1802 5.61329 12.3869C3.81997 10.5936 2.8125 8.16135 2.8125 5.62522C2.81254 4.80409 3.11189 4.01114 3.65448 3.39482C4.19707 2.77851 4.94571 2.3811 5.76021 2.27701C5.88088 2.26241 6.00302 2.28742 6.10824 2.34827C6.21346 2.40912 6.29605 2.50251 6.34357 2.61439L7.75619 5.91049C7.79272 5.99574 7.80761 6.08871 7.79952 6.18111C7.79144 6.27352 7.76062 6.36249 7.70983 6.4401L6.54008 8.22742C6.48684 8.30783 6.45537 8.40066 6.44874 8.49687C6.4421 8.59307 6.46054 8.68935 6.50224 8.7763V8.7763Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>+7 999 156 1992</span>
+                                </a>
+                                <a href="" class="contacts__card-link">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 3.9375H15.75V13.5C15.75 13.6492 15.6907 13.7923 15.5852 13.8977C15.4798 14.0032 15.3367 14.0625 15.1875 14.0625H2.8125C2.66332 14.0625 2.52024 14.0032 2.41475 13.8977C2.30926 13.7923 2.25 13.6492 2.25 13.5V3.9375Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.75 3.9375L9 10.125L2.25 3.9375" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>viktor@ximozo.ru</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class='footer'>
+            <section class='footer-top'>
+                <div class='container'>
+                    <div class='footer-top__header'>
+                        <a href="" class="footer__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        <div class="footer__search search-field">
+                            <input type="text" placeholder="Введите название продукта или CAS">
+                            <div class="search-field__result">
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">12-гидроксистеариновая кислота</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">Abs-пластик hi 121 9001</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">AQUPEC SW-705E</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                                <a href="" class="search-field__item">
+                                    <div class="search-field__item-title">Arlamol hd-lq-(rb)</div>
+                                    <div class="search-field__item-desc">12-ГСК, 12-ГОКС, 12-оксистеариновая кислота, гидроксистеарин</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-top__bottom">
+                        <div class="footer-top__info">
+                            <a href="tel:8 800 2700 700" class="footer__phone btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.77977 7.80077C6.29842 8.86111 7.15792 9.7167 8.2206 10.2305C8.29835 10.2674 8.38436 10.2833 8.47015 10.2768C8.55595 10.2703 8.63857 10.2416 8.7099 10.1935L10.2746 9.1501C10.3438 9.10395 10.4234 9.0758 10.5063 9.06819C10.5891 9.06058 10.6725 9.07376 10.749 9.10652L13.6763 10.3611C13.7757 10.4033 13.8588 10.4767 13.9128 10.5703C13.9669 10.6638 13.9892 10.7724 13.9762 10.8796C13.8837 11.6036 13.5304 12.2691 12.9826 12.7514C12.4347 13.2337 11.7299 13.4998 11 13.4998C8.74566 13.4998 6.58365 12.6043 4.98959 11.0102C3.39553 9.41617 2.5 7.25416 2.5 4.99982C2.50004 4.26993 2.76612 3.56507 3.24843 3.01724C3.73073 2.46941 4.39618 2.11615 5.12019 2.02363C5.22745 2.01065 5.33602 2.03288 5.42955 2.08697C5.52307 2.14106 5.59649 2.22408 5.63873 2.32352L6.89439 5.25339C6.92687 5.32917 6.9401 5.41181 6.93291 5.49394C6.92572 5.57608 6.89833 5.65516 6.85318 5.72415L5.81341 7.31289C5.76608 7.38435 5.73811 7.46688 5.73221 7.55239C5.72631 7.6379 5.7427 7.72348 5.77977 7.80077Z" fill="black"></path>
+                                </svg>
+                                <span>8 800 2700 700</span>
+                            </a>
+                            <div class="footer__desc">Электронная торговая площадка по продаже химического сырья
+                            </div>
+                            <button class="footer__btn btn btn-red">Заказать звонок</button>
+                        </div>
+                        <div class="footer-top__wrap">
+                            <div class="footer-top__col">
+                                <div class="footer__title">
+                                    <span>О нас</span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#E20024" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="footer__links">
+                                    <a href="" class="footer__link">О проекте</a>
+                                    <a href="" class="footer__link">Новости</a>
+                                    <a href="" class="footer__link">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="footer-top__col">
+                                <div class="footer__title">
+                                    <span>Информация</span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#E20024" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="footer__links">
+                                    <a href="" class="footer__link">Покупателю</a>
+                                    <a href="" class="footer__link">Поставщику</a>
+                                    <a href="" class="footer__link">Частые вопросы</a>
+                                </div>
+                            </div>
+                            <div class="footer-top__col">
+                                <div class="footer__title">
+                                    <span>Дополнительно</span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#E20024" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="footer__links">
+                                    <a href="" class="footer__link">Справочник</a>
+                                    <a href="" class="footer__link">Сделки онлайн</a>
+                                    <a href="" class="footer__link">Консультация</a>
+                                </div>
+                            </div>
+                            <div class="footer-top__col footer-top__col--socials">
+                                <div class="footer__title">
+                                    <span>Социальные сети</span>
+                                </div>
+                                <div class="footer__socials">
+                                    <a href="" class="footer__social">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 1.6207C11.4047 1.6207 11.6895 1.63125 12.6352 1.67344C13.5141 1.71211 13.9887 1.85977 14.3051 1.98281C14.7234 2.14453 15.0258 2.34141 15.3387 2.6543C15.6551 2.9707 15.8484 3.26953 16.0102 3.68789C16.1332 4.0043 16.2809 4.48242 16.3195 5.35781C16.3617 6.30703 16.3723 6.5918 16.3723 8.99297C16.3723 11.3977 16.3617 11.6824 16.3195 12.6281C16.2809 13.507 16.1332 13.9816 16.0102 14.298C15.8484 14.7164 15.6516 15.0187 15.3387 15.3316C15.0223 15.648 14.7234 15.8414 14.3051 16.0031C13.9887 16.1262 13.5105 16.2738 12.6352 16.3125C11.6859 16.3547 11.4012 16.3652 9 16.3652C6.59531 16.3652 6.31055 16.3547 5.36484 16.3125C4.48594 16.2738 4.01133 16.1262 3.69492 16.0031C3.27656 15.8414 2.97422 15.6445 2.66133 15.3316C2.34492 15.0152 2.15156 14.7164 1.98984 14.298C1.8668 13.9816 1.71914 13.5035 1.68047 12.6281C1.63828 11.6789 1.62773 11.3941 1.62773 8.99297C1.62773 6.58828 1.63828 6.30351 1.68047 5.35781C1.71914 4.47891 1.8668 4.0043 1.98984 3.68789C2.15156 3.26953 2.34844 2.96719 2.66133 2.6543C2.97773 2.33789 3.27656 2.14453 3.69492 1.98281C4.01133 1.85977 4.48945 1.71211 5.36484 1.67344C6.31055 1.63125 6.59531 1.6207 9 1.6207ZM9 0C6.55664 0 6.25078 0.0105469 5.29102 0.0527344C4.33477 0.0949219 3.67734 0.249609 3.10781 0.471094C2.51367 0.703125 2.01094 1.00898 1.51172 1.51172C1.00898 2.01094 0.703125 2.51367 0.471094 3.1043C0.249609 3.67734 0.0949219 4.33125 0.0527344 5.2875C0.0105469 6.25078 0 6.55664 0 9C0 11.4434 0.0105469 11.7492 0.0527344 12.709C0.0949219 13.6652 0.249609 14.3227 0.471094 14.8922C0.703125 15.4863 1.00898 15.9891 1.51172 16.4883C2.01094 16.9875 2.51367 17.2969 3.1043 17.5254C3.67734 17.7469 4.33125 17.9016 5.2875 17.9437C6.24727 17.9859 6.55312 17.9965 8.99648 17.9965C11.4398 17.9965 11.7457 17.9859 12.7055 17.9437C13.6617 17.9016 14.3191 17.7469 14.8887 17.5254C15.4793 17.2969 15.982 16.9875 16.4813 16.4883C16.9805 15.9891 17.2898 15.4863 17.5184 14.8957C17.7398 14.3227 17.8945 13.6687 17.9367 12.7125C17.9789 11.7527 17.9895 11.4469 17.9895 9.00352C17.9895 6.56016 17.9789 6.2543 17.9367 5.29453C17.8945 4.33828 17.7398 3.68086 17.5184 3.11133C17.2969 2.51367 16.991 2.01094 16.4883 1.51172C15.9891 1.0125 15.4863 0.703125 14.8957 0.474609C14.3227 0.253125 13.6688 0.0984375 12.7125 0.05625C11.7492 0.0105469 11.4434 0 9 0Z" fill="black"/>
+                                            <path d="M9 4.37695C6.44766 4.37695 4.37695 6.44766 4.37695 9C4.37695 11.5523 6.44766 13.623 9 13.623C11.5523 13.623 13.623 11.5523 13.623 9C13.623 6.44766 11.5523 4.37695 9 4.37695ZM9 11.9988C7.34414 11.9988 6.00117 10.6559 6.00117 9C6.00117 7.34414 7.34414 6.00117 9 6.00117C10.6559 6.00117 11.9988 7.34414 11.9988 9C11.9988 10.6559 10.6559 11.9988 9 11.9988Z" fill="black"/>
+                                            <path d="M14.8852 4.19417C14.8852 4.79182 14.4 5.27346 13.8059 5.27346C13.2082 5.27346 12.7266 4.78831 12.7266 4.19417C12.7266 3.59651 13.2117 3.11487 13.8059 3.11487C14.4 3.11487 14.8852 3.60003 14.8852 4.19417Z" fill="black"/>
+                                        </svg>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a href="" class="footer__social">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.7363 1.26375C15.4688 0 13.4325 0 9.375 0H8.625C4.5675 0 2.53125 0 1.26375 1.26375C-0.00375 2.5275 1.29767e-07 4.5675 1.29767e-07 8.625V9.375C1.29767e-07 13.4325 8.9407e-08 15.4688 1.26375 16.7362C2.5275 18.0037 4.5675 18 8.625 18H9.375C13.4475 18 15.4838 18 16.7513 16.7362C18.0188 15.4725 18 13.4325 18 9.375V8.625C18 4.5675 18 2.53125 16.7363 1.26375ZM12.915 12.9675C12.7189 12.2649 12.3195 11.6359 11.7671 11.1595C11.2147 10.6832 10.5338 10.3807 9.81 10.29V12.9675H9.5775C5.475 12.9675 3.135 10.155 3.0375 5.4675H5.0925C5.16 8.9025 6.675 10.3425 7.875 10.6575V5.475H9.81V8.4375C10.995 8.31 12.24 6.96 12.66 5.475H14.595C14.4395 6.24722 14.1261 6.97897 13.6743 7.62429C13.2226 8.26962 12.6424 8.81459 11.97 9.225C12.7196 9.59679 13.3819 10.1232 13.9132 10.7696C14.4445 11.416 14.8328 12.1676 15.0525 12.975L12.915 12.9675Z" fill="black"/>
+                                        </svg>
+                                        <span>Vkontakte</span>
+                                    </a>
+                                    <a href="" class="footer__social">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM9.32244 6.64418C8.44706 7.00828 6.69752 7.76188 4.07384 8.90498C3.64779 9.0744 3.42461 9.24015 3.4043 9.40221C3.36996 9.67611 3.71295 9.78396 4.18003 9.93083C4.24356 9.9508 4.30939 9.9715 4.37687 9.99344C4.8364 10.1428 5.45454 10.3176 5.77589 10.3245C6.06738 10.3308 6.39272 10.2106 6.7519 9.96399C9.20329 8.30924 10.4687 7.47284 10.5482 7.45481C10.6042 7.44209 10.6819 7.4261 10.7345 7.47287C10.7871 7.51964 10.7819 7.60822 10.7764 7.63199C10.7424 7.77684 9.39601 9.02855 8.69926 9.67632C8.48205 9.87826 8.32797 10.0215 8.29648 10.0542C8.22592 10.1275 8.15401 10.1968 8.0849 10.2634C7.658 10.675 7.33785 10.9836 8.10263 11.4876C8.47014 11.7298 8.76423 11.93 9.05762 12.1298C9.37804 12.348 9.69763 12.5657 10.1111 12.8367C10.2165 12.9058 10.3171 12.9775 10.4151 13.0474C10.788 13.3132 11.123 13.552 11.5369 13.514C11.7774 13.4918 12.0258 13.2657 12.1519 12.5913C12.4501 10.9973 13.0361 7.54383 13.1716 6.12072C13.1834 5.99603 13.1685 5.83646 13.1565 5.76642C13.1445 5.69637 13.1195 5.59657 13.0284 5.52268C12.9206 5.43519 12.7541 5.41674 12.6797 5.41805C12.3412 5.42401 11.8218 5.6046 9.32244 6.64418Z" fill="black"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class='footer-bottom'>
+                <div class='container'>
+                    <div class='footer-bottom__inner'>
+                        <div class="footer-bottom__item">© ООО «Химозо» 2007–2021.</div>
+                        <a href="" class="footer-bottom__item">Условия и положения</a>
+                        <a href="" class="footer-bottom__item">Политика конфиденциальности</a>
+                        <a href="" class="footer-bottom__item">Политика в отношении cookie-файлов</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+
+    <div id='cityModal' class='modal modal-city fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class='modal__content'>
+                <div class="modal__top">
+                    <div class="modal__title">Выберите город</div>
+                </div>
+                <div class="modal__search">
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <div class="modal__cities">
+                    <div class="modal__city">
+                        <input checked type='radio' class='radio' id='city1' name='city' />
+                        <label for='city1'>Казань</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city2' name='city' />
+                        <label for='city2'>Москва</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city3' name='city' />
+                        <label for='city3'>Набережные Челны</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city4' name='city' />
+                        <label for='city4'>Калининград</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city5' name='city' />
+                        <label for='city5'>Санкт-Петербург</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city6' name='city' />
+                        <label for='city6'>Великий Новгород</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city7' name='city' />
+                        <label for='city7'>Новосибирск</label>
+                    </div>
+                    <div class="modal__city">
+                        <input type='radio' class='radio' id='city8' name='city' />
+                        <label for='city8'>Уфа</label>
+                    </div>
+                </div>
+                <button class="modal__btn btn btn-red">Выбрать город</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.nice-select.min.js "></script>
+    <script src="js/swiper.js "></script>
+    <script src="js/jquery.maskedinput.min.js "></script>
+    <script src="js/index.js "></script>
+</body>
+
+</html>
