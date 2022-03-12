@@ -110,74 +110,74 @@ $(document).ready(function() {
         $(".header-top").toggleClass("header-top--active")
     })
 
-    $(".header__search-btn-open").click(function() {
+    // $(".header__search-btn-open").click(function() {
 
 
-        $(this).parent(".header__search-btn").addClass("header__search-btn--active")
-        $(this).parent(".header__search-btn").siblings("input").slideDown(1)
-            // $(this).siblings("input").slideDown(1)
-        if ($(this).parent(".header__search-btn").siblings('input').val()) {
-            $(this).parent(".header__search-btn").siblings("input").slideDown(1)
-            $(".header__search-result").addClass("header__search-result--active")
-            $("body").addClass("body-before")
-        }
+    //     $(this).parent(".header__search-btn").addClass("header__search-btn--active")
+    //     $(this).parent(".header__search-btn").siblings("input").slideDown(1)
+    //         // $(this).siblings("input").slideDown(1)
+    //     if ($(this).parent(".header__search-btn").siblings('input').val()) {
+    //         $(this).parent(".header__search-btn").siblings("input").slideDown(1)
+    //         $(".header__search-result").addClass("header__search-result--active")
+    //         $("body").addClass("body-before")
+    //     }
 
-        // if ($(this).hasClass("header__search-btn--active")) {
-
-
-        // } else {
-        //     $(this).addClass("header__search-btn--active")
-        //     $(this).siblings("input").slideDown(1)
-        //     if ($(this).siblings('input').val()) {
-        //         $(this).siblings("input").slideDown(1)
-        //         $(".header__search-result").addClass("header__search-result--active")
-        //         $("body").addClass("body-before")
-        //     }
-        // }
-
-    })
-
-    $(".header__search-btn-close").click(function() {
-        $(".header__search-btn").removeClass("header__search-btn--active")
-        $(".header__search-btn").siblings("input").slideUp(1)
-        $(".header__search-result").removeClass("header__search-result--active")
-        $("body").removeClass("body-before")
-        if ($(this).parent(".header__search-btn").siblings('input').val()) {
-            $(this).parent(".header__search-btn").siblings("input").slideUp(1)
-            $(".header__search-result").removeClass("header__search-result--active")
-            $("body").removeClass("body-before")
-        }
-    })
-
-    $(".header__search input").keydown(function() {
-        $(".header__search-result").addClass("header__search-result--active")
-        $("body").addClass("body-before")
-    })
-
-    $(".header__search input").click(function() {
-        if ($(this).val()) {
-            if ($(this).siblings(".header__search-btn").hasClass("header__search-btn--active")) {
-                $(".header__search-result").addClass("header__search-result--active")
-                $("body").addClass("body-before")
-            }
-
-        }
-    })
+    //     // if ($(this).hasClass("header__search-btn--active")) {
 
 
+    //     // } else {
+    //     //     $(this).addClass("header__search-btn--active")
+    //     //     $(this).siblings("input").slideDown(1)
+    //     //     if ($(this).siblings('input').val()) {
+    //     //         $(this).siblings("input").slideDown(1)
+    //     //         $(".header__search-result").addClass("header__search-result--active")
+    //     //         $("body").addClass("body-before")
+    //     //     }
+    //     // }
 
-    $(".search-field input").keydown(function() {
-        $(this).siblings(".search-field__result").addClass("search-field__result--active")
-        $(".wrapper").addClass("body-before")
+    // })
 
-    })
+    // $(".header__search-btn-close").click(function() {
+    //     $(".header__search-btn").removeClass("header__search-btn--active")
+    //     $(".header__search-btn").siblings("input").slideUp(1)
+    //     $(".header__search-result").removeClass("header__search-result--active")
+    //     $("body").removeClass("body-before")
+    //     if ($(this).parent(".header__search-btn").siblings('input').val()) {
+    //         $(this).parent(".header__search-btn").siblings("input").slideUp(1)
+    //         $(".header__search-result").removeClass("header__search-result--active")
+    //         $("body").removeClass("body-before")
+    //     }
+    // })
 
-    $(".search-field input").click(function() {
-        if ($(this).val()) {
-            $(".search-field__result").addClass("search-field__result--active")
-            $(".wrapper").addClass("body-before")
-        }
-    })
+    // $(".header__search input").keydown(function() {
+    //     $(".header__search-result").addClass("header__search-result--active")
+    //     $("body").addClass("body-before")
+    // })
+
+    // $(".header__search input").click(function() {
+    //     if ($(this).val()) {
+    //         if ($(this).siblings(".header__search-btn").hasClass("header__search-btn--active")) {
+    //             $(".header__search-result").addClass("header__search-result--active")
+    //             $("body").addClass("body-before")
+    //         }
+
+    //     }
+    // })
+
+
+
+    // $(".search-field input").keydown(function() {
+    //     $(this).siblings(".search-field__result").addClass("search-field__result--active")
+    //     $(".wrapper").addClass("body-before")
+
+    // })
+
+    // $(".search-field input").click(function() {
+    //     if ($(this).val()) {
+    //         $(".search-field__result").addClass("search-field__result--active")
+    //         $(".wrapper").addClass("body-before")
+    //     }
+    // })
 
 
 
